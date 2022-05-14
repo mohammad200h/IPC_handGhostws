@@ -1,0 +1,5 @@
+build/
+*.zip
+openvr/
+LinuxCommunication-main/
+bullet3/

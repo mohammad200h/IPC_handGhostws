@@ -1,0 +1,25 @@
+installing bullet library so we can use packages in ros:
+https://stackoverflow.com/questions/36265886/use-bullet-in-my-c-project-in-linux
+https://codeyarns.com/2015/12/02/how-to-compile-and-use-bullet3-with-opencl-support/
+
+
+------------------------How to run this---------------
+1.First we need to make sure Com is installed which is located in LinuxCommunication/GymGhostWorldCom:
+cd build
+cmake ..
+make
+sudo make install
+
+2.installl openvr
+
+3. make sure bullet3 is installed which is located in bullet3
+
+4.install IPC_handGhostws
+
+
+--------------------------Setting VScode for debuging------------
+Install GDB:
+sudo apt-get update
+sudo apt-get install gdb
+
+Intall CMake using the Vscode extension
