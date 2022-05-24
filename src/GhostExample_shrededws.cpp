@@ -125,7 +125,7 @@ Finger::Finger(btDiscreteDynamicsWorld *dynamicsWorld,btAlignedObjectArray<btCol
     m_dynamicsWorld   = dynamicsWorld;
 	m_collisionShapes = collisionShapes;
 
-	std::string path = "/home/mamad/hand_RL_ws/IPC_handGhostws";
+	std::string path = "/home/mamad/IPC_handGhostws/bullet3/build/examples/GhostWorldServer";
 	std::string finger_path = path +  "/model/WS_mesh.STL";
 	std::cout<<"path"<<finger_path<<std::endl;
 	const char* m_fileName = finger_path.c_str() ;
