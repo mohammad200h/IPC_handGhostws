@@ -145,6 +145,7 @@ class Game(ShowBase):
     
     def update(self,task):
         # self.update_ws()
+        print("base::",base)
         self.update_pos()
         self.update_camera_zoom()
 
