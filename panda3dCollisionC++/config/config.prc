@@ -1,0 +1,1 @@
+load-file-type p3assimp

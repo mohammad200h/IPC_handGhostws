@@ -1,0 +1,4 @@
+c++ installation:
+https://docs.panda3d.org/1.10/python/introduction/installation-linux
+
+python3 makepanda/makepanda.py --everything --installer --no-egl --no-gles --no-gles2 --no-opencv --no-bullet
