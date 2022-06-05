@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION  2.8.3)
 project(Game)
-
+set(CMAKE_BUILD_TYPE Debug)
 add_compile_options(-std=c++14)
 
 
@@ -26,7 +26,7 @@ libp3interrogatedb.so   ;  libpandaegg.so   ;           libpandaskel.so.1.11
 
 
 
-include_directories( ${PANDA_INCLUDE_DIRS} ${Eigen_INCLUDE_DIRS})
+include_directories( ${PANDA_INCLUDE_DIRS} ${Eigen_INCLUDE_DIRS} include)
 
 
 
@@ -37,8 +37,15 @@ add_executable(Game
       
                
 )
+add_executable(GhostWorldServer
+                src/GhostWorldServer.cpp
+                src/GhostWorld.cpp
+                 
+)
+
 foreach(LIB ${LIBS_LIST})
     target_link_libraries(Game ${PANDA_LIB}${LIB})
+    target_link_libraries(GhostWorldServer ${PANDA_LIB}${LIB})
 endforeach()
 
 
